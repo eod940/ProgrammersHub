@@ -11,7 +11,8 @@ public class Main {
 		public int idx, num;
 		@Override
 		public int compareTo(Elem other) {
-			if (num == other.num) return idx - other.idx;
+			// Arrays sort에서 Tim Sort(Stable) 사용하기 때문에 조건 안줘도 됨
+			// if (num == other.num) return idx - other.idx;
 			return num - other.num;
 		}
 	}
